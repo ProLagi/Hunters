@@ -1,0 +1,57 @@
+﻿<Window x:Class="Hunters.AddWindow.AddHunter_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hunters.AddWindow"
+        mc:Ignorable="d"
+        Title="AddHunter_Window" Height="1080" Width="1920" WindowState="Maximized" FontSize="20" Background="#FFCCCBCB">
+    <Grid Margin="0,0,0,-6" Background="#FFCCCBCB">
+        <WrapPanel Margin="10,10,0,16" Orientation="Vertical" HorizontalAlignment="Left" Width="581">
+            <Label Content="ФИО" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="FullNameHunter_lb" Width="579" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Номер членского билета" VerticalAlignment="Center" FontWeight="Bold" Width="581" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="NumberChlenBilet_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Серия членского билета" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="SeriesChlenBilet_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Серия билета" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="SeriesBilet_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Номер билета" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="NumberBilet_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Дата выдачи" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+
+            <DatePicker x:Name="DateIssue_lb" CalendarStyle="{StaticResource ResourceKey = styleCalendar}" HorizontalAlignment="Center" Width="580" Margin="0,0,0,30"/>
+
+            <Label Content="НПП" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="NPP_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Номер телефона" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="NumberPhone_lb" Width="NaN" Height="NaN" Margin="0,0,0,30"/>
+            <Label Content="Дата рождения" VerticalAlignment="Top" FontWeight="Bold" Width="NaN" Height="NaN" HorizontalContentAlignment="Center"/>
+            <DatePicker x:Name="DateBirth_lb" CalendarStyle="{StaticResource ResourceKey = styleCalendar}" HorizontalAlignment="Center" Width="580" Margin="0,0,0,30"/>
+        </WrapPanel>
+
+        <WrapPanel Margin="688,10,0,6" Orientation="Vertical" HorizontalAlignment="Left" Width="613">
+            <Label Content="ИНН" FontWeight="Bold" Padding="5,7,5,5" Width="613" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Height="36.6"/>
+            <TextBox x:Name="INN_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Дата вступления" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <DatePicker x:Name="DateEntry_lb" CalendarStyle="{StaticResource ResourceKey = styleCalendar}" HorizontalAlignment="Center" Width="614"/>
+            <Label Content="Город" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="City_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Улица" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="Street_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Дом" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="Home_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Подьезд" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="Entrance_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Квартира" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="Apartment_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Тип вычета" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="DeductionType_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+            <Label Content="Номер документа" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Padding="5,7,5,5" Height="36.6"/>
+            <TextBox x:Name="NumberDocument_lb" Width="NaN" Height="NaN" Background="White" Margin="0,0,0,30"/>
+        </WrapPanel>
+        <Button x:Name="AddNewHunterInDB_btn" Content="Добавить охотника" HorizontalAlignment="Left" Margin="1556,926,0,0" VerticalAlignment="Top" Height="73" Width="215" Click="AddNewHunterInDB_btn_Click" Background="#FF989292"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="1556,828,0,0" VerticalAlignment="Top" Height="73" Width="215" Click="Button_Click" Background="#FF989292"/>
+        <Button x:Name="SaveHunter_btn_Copy" Content="Сохранить" HorizontalAlignment="Left" Margin="1556,724,0,0" VerticalAlignment="Top" Height="73" Width="215" Background="#FF989292"/>
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="Hunters.Forms.Vouchers_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hunters.Forms"
+        mc:Ignorable="d"
+        Title="Vouchers_Window" Height="1080" Width="1920" FontSize="20" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid Background="#FF383838">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="361*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="650*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Row="1" Background="#FF888787" Margin="10,10,10,10">
+            <WrapPanel x:Name="Vouchers_wrap">
+
+            </WrapPanel>
+        </ScrollViewer>
+        <WrapPanel Background="#FF696767" Margin="10,0,10,0">
+            <Button Content="Охотники" BorderThickness="1,1,1,1" Margin="0,0,10,0" Height="62" Width="109" Click="Button_Click"/>
+            <Button Content="Животные" Height="62" Width="125" Click="Button_Click_1"/>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Margin="0,10,0,132" HorizontalAlignment="Center" Orientation="Vertical" Width="432" Grid.Row="1">
+            <Label Content="Номер путевки" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchNumberVoucher_tb" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="436" TextChanged="SearchNumberVoucher_tb_TextChanged"/>
+            <Label Content="Дата начала" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchDateStart_tb" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="432" TextChanged="SearchDateStart_tb_TextChanged"/>
+            <Label Content="Дата окончания" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchDateFinish_tb_Copy" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="436" TextChanged="SearchDateFinish_tb_Copy_TextChanged"/>
+            <Label Content="Серия билета" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchSeriesBilet_tb_Copy1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="436" TextChanged="SearchSeriesBilet_tb_Copy1_TextChanged"/>
+            <Label Content="Номер билета" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchNumberBilet_tb_Copy2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="436" TextChanged="SearchNumberBilet_tb_Copy2_TextChanged"/>
+            <Label Content="ФИО" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="SearchFullName_tb" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="436" TextChanged="SearchFullName_tb_TextChanged"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>

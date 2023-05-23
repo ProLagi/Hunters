@@ -1,0 +1,33 @@
+﻿<Window x:Class="Hunters.AddWindow.AddAnimal_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hunters.AddWindow"
+        mc:Ignorable="d"
+        Title="AddAnimal_Window" Height="1080" Width="1920" FontSize="36" WindowState="Maximized">
+    <Grid Background="#FFCCCBCB">
+        <WrapPanel Margin="10,10,0,10" Orientation="Vertical" HorizontalAlignment="Left" Width="1220">
+            <Label Content="Наименование" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="NameAnimals_tb" TextWrapping="Wrap" Text="" Width="1209" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+            <Label Content="Вид разрешения" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="TypePermission" TextWrapping="Wrap" Text="" Width="1211" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+            <Label Content="Дата началы охоты" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <DatePicker x:Name="DateStarAnimal_date" CalendarStyle="{StaticResource ResourceKey = styleCalendar}" Width="1220" Margin="0,0,0,20"/>
+            <Label Content="Дата окончания охоты" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <DatePicker x:Name="DateFinishAnimal_date" CalendarStyle="{StaticResource ResourceKey = styleCalendar}" Width="1211" Margin="0,0,0,20"/>
+            <Label Content="Максимум дней" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="MaksDay_tb" TextWrapping="Wrap" Text="" Width="1211" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+            <Label Content="За день" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="PerDay_tb" TextWrapping="Wrap" Text="" Width="1211" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+            <Label Content="За сезон" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="PerSeason_tb" TextWrapping="Wrap" Text="" Width="1211" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+            <Label Content="Сбор" BorderBrush="Black" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Collection_tb" TextWrapping="Wrap" Text="" Width="1211" BorderThickness="0,0,0,0" Margin="0,0,0,20"/>
+        </WrapPanel>
+        <Button x:Name="BackAnimals_btn" Content="Назад" HorizontalAlignment="Left" Margin="1544,802,0,0" VerticalAlignment="Top" Width="249" Height="72" Background="#FF8E8C8C" Click="BackAnimals_btn_Click"/>
+        <Button x:Name="AddNewAnimals_btn" Content="Добавить" HorizontalAlignment="Left" Margin="1544,928,0,0" VerticalAlignment="Top" Width="249" Height="72" Background="#FF8E8C8C" Click="AddNewAnimals_btn_Click"/>
+        <Button x:Name="EditSaveAnimals_btn" Content="Сохранить" HorizontalAlignment="Left" Margin="1544,688,0,0" VerticalAlignment="Top" Width="249" Height="72" Background="#FF8E8C8C" Click="EditSaveAnimals_btn_Click"/>
+
+    </Grid>
+</Window>
